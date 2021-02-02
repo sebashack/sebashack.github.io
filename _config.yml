@@ -6,19 +6,19 @@
 # --- Required options --- #
 
 # Name of website
-title: My Website
+title: Sebastián Pulido
 
 # Your name to show in the footer
-author: Some Person
+author: Sebastián Pulido
 
 # --- List of links in the navigation bar --- #
 
 navbar-links:
   About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Contents:
+    - Programming: "https://beautifuljekyll.com"
+    - Psychology & philosophy: "https://www.markdowntutorial.com/"
+  #Author's home: "https://sebashack.github.io/"
 
 # --- Logo --- #
 
@@ -39,12 +39,13 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: c/daattali
+  email: "sebastian0092@gmail.com"
+  github: sebashack
+  gitlab: sebashack
+#  facebook: deanattali
+#  twitter: daattali
+#  patreon: DeanAttali
+#  youtube: c/daattali
 #  reddit: yourname
 #  linkedin: daattali
 #  xing: yourname
@@ -77,7 +78,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+url-pretty: "sebashack.github.io"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
@@ -95,14 +96,14 @@ feed_show_tags: true
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#EAEAEA"
+navbar-col: "#A8BCED"
 navbar-text-col: "#404040"
 navbar-border-col: "#DDDDDD"
 page-col: "#FFFFFF"
 text-col: "#404040"
 link-col: "#008AFF"
 hover-col: "#0085A1"
-footer-col: "#EAEAEA"
+footer-col: "#A8BCED"
 footer-text-col: "#777777"
 footer-link-col: "#404040"
 
@@ -186,7 +187,7 @@ date_format: "%B %-d, %Y"
 # --- You don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Toronto"
+timezone: "America/Bogota"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
@@ -228,4 +229,3 @@ plugins:
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
-
