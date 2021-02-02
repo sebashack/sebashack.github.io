@@ -6,7 +6,7 @@ css: assets/css/custom/justify_text.css
 
 ## Personal Trivia
 
-I am a Colombian programmer & psychologist. My professional life consists mostly of participating in software development
+I am a Colombian programmer and psychology BSc. My professional life consists mostly of participating in software development
 projects where I have the chance to exercise functional programming. Nevertheless, psychology and philosophy are the
 intellectual pillars that drive my reflection upon reality. After my psychology degree I didn’t really feel motivated
 to exercise it as my main professional activity, primarily since I developed a fascination for the computational
@@ -36,4 +36,4 @@ scalable and robust. That's why we are promoting a tech stack whose main players
 - Jul. 2014 - Present--*Universidad EAFIT*. I Studied *Mathematical Engineering* until the end of the second semester of 2016
   and stopped to have an immersion in software industry. I resumed my engineering studies in 2020 but this time switched to
   *Systems Engineering* due to more affinity with my personal goals.
-- Jul. 2009 - Dec. 2014--*Universidad de San Buenaventura*. Psychology degree with emphasis in Cognitive Psychology.
+- Jul. 2009 - Dec. 2014--*Universidad de San Buenaventura*. Psychology BSc degree with emphasis in Cognitive Psychology.
