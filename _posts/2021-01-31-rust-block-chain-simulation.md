@@ -649,16 +649,16 @@ and dispatches commands to the underlying node process. Several such processes c
 protocol. Assume we have two nodes indexed by 0 and 1. Let’s explore how we would boot a node session and how two nodes should interact given some simple echo
 commands:
 
-![user_session_0](https://raw.githubusercontent.com/sebashack/sebashack.github.io/master/_custom_img/2021-01-31-rust-block-chain-simulation/user_session_0.png){: .mx-auto.d-block :}
+![user_session_0](/assets/img/custom/2021-01-31-rust-block-chain-simulation/user_session_0.png){: .mx-auto.d-block :}
 
 We launch a node by running the `cargo run -- -n i` command where *i* is a natural number that uniquely identifies the node. Once a node starts, it’ll be ready to
 receive user input so let’s see what happens when the user inputs the `ConnecTo` command:
 
-![user_session_1](https://raw.githubusercontent.com/sebashack/sebashack.github.io/master/_custom_img/2021-01-31-rust-block-chain-simulation/user_session_1.png){: .mx-auto.d-block :}
+![user_session_1](/assets/img/custom/2021-01-31-rust-block-chain-simulation/user_session_1.png){: .mx-auto.d-block :}
 
 Notice that node 1 got a connection from node 0, which is notified via standard output. The `EchoTo` command looks like this:
 
-![user_session_2](https://raw.githubusercontent.com/sebashack/sebashack.github.io/master/_custom_img/2021-01-31-rust-block-chain-simulation/user_session_2.png){: .mx-auto.d-block :}
+![user_session_2](/assets/img/custom/2021-01-31-rust-block-chain-simulation/user_session_2.png){: .mx-auto.d-block :}
 
 An `EchoTo 1` request is queued in node 0’s session and then delivered to node 1. Node 1, in turn, displays the echo message--”HELLO”--and queues a response to be
 delivered to node 0. Finally, node 0 receives the response and displays it.
@@ -669,7 +669,7 @@ delivered to node 0. Finally, node 0 receives the response and displays it.
 
 The following diagram depicts the overall flow and components in the interaction among several nodes:
 
-![architecture](https://raw.githubusercontent.com/sebashack/sebashack.github.io/master/_custom_img/2021-01-31-rust-block-chain-simulation/architecture.png){: .mx-auto.d-block :}
+![architecture](/assets/img/custom/2021-01-31-rust-block-chain-simulation/architecture.png){: .mx-auto.d-block :}
 
 A node can receive multiple connections from remote peers which will send commands to it. Additionally, a user can also deliver commands through an interactive
 session. Both types of commands are queued via an inbound channel which is constantly polled by a task whose purpose is to dispatch the command’s values to the
@@ -966,7 +966,7 @@ impl Node {
 And that’s it for the listener process. However, this is not the only way a node can establish a connection: as we saw in the command line example above, a user
 can require the node to connect to a peer:
 
-![user_session_1](https://raw.githubusercontent.com/sebashack/sebashack.github.io/master/_custom_img/2021-01-31-rust-block-chain-simulation/user_session_1.png){: .mx-auto.d-block :}
+![user_session_1](/assets/img/custom/2021-01-31-rust-block-chain-simulation/user_session_1.png){: .mx-auto.d-block :}
 
 The user communicates with the node via an interactive session that has its own spawned task:
 
@@ -1173,7 +1173,7 @@ impl Node {
 
 A user can tell a node to echo a message to another, as we saw above:
 
-![user_session_2](https://raw.githubusercontent.com/sebashack/sebashack.github.io/master/_custom_img/2021-01-31-rust-block-chain-simulation/user_session_2.png){: .mx-auto.d-block :}
+![user_session_2](/assets/img/custom/2021-01-31-rust-block-chain-simulation/user_session_2.png){: .mx-auto.d-block :}
 
 This means that the user is also issuing commands to the node:
 
@@ -1592,7 +1592,7 @@ responses.
 Once a node is connected to a remote peer, it can synchronize with it, that is, it can request the remote peer to send a list of other known peers in the network
 together with a copy of its local blocakchain:
 
-![user_session_3](https://raw.githubusercontent.com/sebashack/sebashack.github.io/master/_custom_img/2021-01-31-rust-block-chain-simulation/user_session_3.png){: .mx-auto.d-block :}
+![user_session_3](/assets/img/custom/2021-01-31-rust-block-chain-simulation/user_session_3.png){: .mx-auto.d-block :}
 
 The first step is to add the new user command to the interactive session:
 
@@ -1830,7 +1830,7 @@ pub enum UserCommand {
 
 Making a transaction makes use of the `handle_add_transaction` method which, in turn, just calls the `add_new_transaction` method defined for a blockchain:
 
-![user_session_4](https://raw.githubusercontent.com/sebashack/sebashack.github.io/master/_custom_img/2021-01-31-rust-block-chain-simulation/user_session_4.png){: .mx-auto.d-block :}
+![user_session_4](/assets/img/custom/2021-01-31-rust-block-chain-simulation/user_session_4.png){: .mx-auto.d-block :}
 
 ```rust
 impl Node {
@@ -1880,7 +1880,7 @@ Similarly, mining requires us to call the `handle_mining` method which uses the 
 the local chain turns out to be longer than the length stored in `self.longest_peer_chain`, this node’s field is updated. We’ll explain later the purpose of the
 `longest_peer_chain` field when we talk about how to implement a simple consensus strategy.
 
-![user_session_5](https://raw.githubusercontent.com/sebashack/sebashack.github.io/master/_custom_img/2021-01-31-rust-block-chain-simulation/user_session_5.png){: .mx-auto.d-block :}
+![user_session_5](/assets/img/custom/2021-01-31-rust-block-chain-simulation/user_session_5.png){: .mx-auto.d-block :}
 
 ```rust
 impl Node {
@@ -1917,7 +1917,7 @@ Finally, getting an account’s balance is done through the `handle_get_balance`
 stored for the pending transactions. If the balance for the specific account is found, it’ll be printed in standard output, otherwise there will be a log telling
 the user that the given account wasn't found:
 
-![user_session_6](https://raw.githubusercontent.com/sebashack/sebashack.github.io/master/_custom_img/2021-01-31-rust-block-chain-simulation/user_session_6.png){: .mx-auto.d-block :}
+![user_session_6](/assets/img/custom/2021-01-31-rust-block-chain-simulation/user_session_6.png){: .mx-auto.d-block :}
 
 
 ```rust
