@@ -16,8 +16,8 @@ author: Sebastián Pulido
 navbar-links:
   About Me: "about"
   Contents:
-    - Programming: "https://beautifuljekyll.com"
-    - Psychology & philosophy: "https://www.markdowntutorial.com/"
+    - Programming: "https://sebashack.github.io/tags/#programming"
+    - Psychology & philosophy: "https://sebashack.github.io/tags/#psychology"
   #Author's home: "https://sebashack.github.io/"
 
 # --- Logo --- #
