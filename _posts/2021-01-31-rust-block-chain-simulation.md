@@ -5,8 +5,6 @@ subtitle: Learn by implementing a simple Blockchain simulation
 tags: [rust, programming]
 ---
 
-***Introduction***
-
 One of the most celebrated aspects of the Rust programming language is its “fearless concurrency”. This is a sound claim as the language introduces several built-in
 tools that help the programmer reason about the dangers of multithreaded and asynchronous programming. Some of these tools belong to the language’s syntactic
 arsenal, e.g., moving the ownership of a variable within the scope of a closure helps us avoid sharing mutability between threads or even referencing values that no longer live:
