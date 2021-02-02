@@ -14,7 +14,7 @@ author: Sebastián Pulido
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutme"
+  About Me: "about"
   Contents:
     - Programming: "https://beautifuljekyll.com"
     - Psychology & philosophy: "https://www.markdowntutorial.com/"
