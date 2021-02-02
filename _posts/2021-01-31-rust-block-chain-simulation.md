@@ -2,6 +2,7 @@
 layout: post
 title: Hands on asynchronous Rust
 subtitle: Learn by implementing a simple Blockchain simulation
+css: assets/css/custom/justify_post_text.css
 tags: [rust, programming]
 ---
 
