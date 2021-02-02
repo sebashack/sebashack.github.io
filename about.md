@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+css: assets/css/custom/justify_text.css
 ---
 
 ## Personal Trivia
