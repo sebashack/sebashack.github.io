@@ -2,7 +2,7 @@
 layout: post
 title: Hands on asynchronous Rust
 subtitle: Learn by implementing a simple Blockchain simulation
-tags: [rust]
+tags: [rust, programming]
 ---
 
 ***Introduction***
